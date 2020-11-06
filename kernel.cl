@@ -6,7 +6,7 @@ __kernel void color_convertion(__global unsigned char *y_frame_data, __global un
         const int xx = x >> 1;
         const int yy = yPos >> 1;
 
-        const int Y = 1.164 * y_frame_data[(yPos * frame_linesize[0] + x)];
+        const int Y = 1.164 * y_frame_data[(yPos * frame_linesize[0] + x)] - 16;
         const int U = u_frame_data[yy * frame_linesize[1] + xx] - 128;
         const int V = v_frame_data[yy * frame_linesize[2] + xx] - 128;
 
