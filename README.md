@@ -1,2 +1,2 @@
 # OpenCL_Example
-OpenCL + LibAV example. Convetion from YUV to RGB.
+OpenCL + LibAV example. Convertion from YUV to RGB.
